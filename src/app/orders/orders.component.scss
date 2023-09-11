@@ -1,0 +1,41 @@
+div {
+    font-family: tahoma;
+    text-align: center;
+    .header {
+        height: auto;
+        padding: 2px 0 0;
+        margin: 0;
+        width: 53%;
+        span {
+            input {
+                border: 1px solid #ccc;
+                border-radius: 3px;
+            }
+            img {
+                position: relative;
+                left: 1.3em;
+                top: .1rem;
+            }
+        }
+    }
+    .tabs {
+        margin-top: .9rem; 
+        height: 25px; 
+        .col {
+            height: 100%;
+            width: 33.33%;
+            display: inline-block;
+        }
+    }
+    .tabs .col{
+        cursor: pointer;
+        padding: 3px;
+        color: #333;
+        background: #ebebeb;
+        border: 1px solid #d9d9d9;
+        font-size: .75rem;   
+    }
+    .text {
+        margin-top: 2rem;
+    }
+}

@@ -1,0 +1,96 @@
+.investment {
+    height: 100%;
+    width: 100%;
+    font-family: tahoma;
+    .header {
+        height: 35px;
+        width: 100%;
+        background: #ecf7fd;
+        &::before {
+            content: "";
+            height: 35px;
+            background: #1c9ad5;
+            width: 3px;
+            display: block;
+            position: absolute;
+
+        }
+        img {
+            width: 17px;
+            height: 20px;
+            margin-block-start: 6px;
+            margin-inline-start: 8px;
+        }
+        .title {
+            display: inline-block;
+            color: #1c9ad5;
+            font-size: .8em;
+            position: relative;
+            top: -6px;
+            right: 0.5rem;
+        }
+    }
+    .text {
+        background: #ecf7fd;
+        border: 1px solid #ecf7fd;
+        border-radius: 4px;
+        width: 100%;
+        line-height: 23px;
+        text-align: left;
+        padding: 10px;
+        font-size: .8em;
+        color: #444;
+        margin: 10px auto;
+        .desc {
+            text-align: justify;
+        }
+        a {
+            cursor: pointer;
+            text-decoration: none;
+            color: #1c9ad5;
+        }
+
+    }
+    .information {
+        color: #444;
+        font-family: tahoma;
+        font-size: .8em;
+        padding-top: 8px;
+        padding-right: 8px;
+        display: block;
+        height: 35px;
+        &:nth-child(even) {
+            background: #f7f8fa;
+        }
+        .right {
+            display: inline-block;
+            width: 50%;
+        }
+        .left {
+            display: inline-block;
+            width: 50%;
+        }
+        .right-text {
+            display: inline-block;
+            width: 20%;
+        }
+        .left-text {
+            display: inline-block;
+            width: 80%;
+        }
+    }
+    .button {
+        cursor: pointer;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        line-height: 1.5rem;
+        color: #1c9ad5;
+        border: 1px solid #1c9ad5;
+        font-size: .9rem;
+        &:hover {
+            background: #1c9ad5;
+            color: #fff;
+        }
+    }
+}

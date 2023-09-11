@@ -1,0 +1,32 @@
+<div class="analysis">
+    <!-- <div class="date">00/00/00</div> -->
+    <div class="filter">
+        <div class="right-el">
+            <a href="">
+                <img src="https://icongr.am/feather/trending-up.svg?color=1c9ad5&size=18" alt="">
+                <span>تحلیل ها</span>
+            </a>
+        </div>
+        <div class="left-el">
+            <select class="select-list" name="" id="">
+                <option value="">همه تحلیل ها</option>
+                <option value="">نماد های پورتفو</option>
+                <option value="">درحال رصد</option>
+                <option value="">پورتفو ودرحال رصد</option>
+            </select>
+        </div>
+    </div>
+    <div class="widget-body">
+        <div class="widget" *ngFor="let item of analysisList">
+            <div class="date">{{item.date}}</div>
+            <div class="Market-prices">
+                <img class="img" src="{{item.img}}" alt="">
+                <span class="journal">{{item.title}}</span>
+            </div>
+            <div class="button-market-price">
+                <a href="">{{item.button}}</a>
+            </div>
+            <a class="view" href="">{{item.viewbutton}}</a>
+        </div>
+    </div>
+</div>

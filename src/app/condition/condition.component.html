@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="header">
+       <div class="head">
+        <img class="coins" src="/assets/images/icons8-coin-64.png" alt="">
+        <span> وضعیت مالی</span>
+        <span class="refresh">
+            <img src="https://icongr.am/entypo/cw.svg?color=a1a1a1" alt="">
+        </span>
+       </div>
+    </div>
+    <div class="condition-report">
+       <div class="condition" *ngFor="let item of condition">
+        <div class="text">{{item.title}}</div>
+        <div class="value">{{item.value}}</div>
+        
+       </div>
+       <br>
+       <div class="account-number">
+        <span> <img src="https://www.nahayatnegar.com/images/arrow-link.svg" alt=""></span>
+        <a>شماره حساب های کارگزاری</a>
+       </div>
+    </div>
+    
+</div>

@@ -1,0 +1,116 @@
+.analysis {
+    font-family: tahoma;
+    height: 100%;
+    .filter {
+        height: 35px; 
+        width: 100%;
+        background: #ecf7fd;
+        &::before {
+            content: "";
+            width: 3px;
+            height: 35px;
+            position: absolute;
+            display: block;
+            background: #1c9ad5;
+        }
+        .right-el {
+            width: 46%;
+            display: inline-block;
+            a {
+                text-decoration: none;
+                color: #1c9ad5;
+                font-size: .7rem;
+                img {
+                    position: relative;
+                    top: 5px;
+                    right: 8px;
+                    
+                }
+                span {
+                    margin-inline-start: .9rem;
+                }
+            }
+        }
+        .left-el {
+            padding-left: 0.625rem;
+            padding-right: 0.625rem;
+            width: 54%;
+            display: inline-block;
+            .select-list {
+                width: 100%;
+                border: 1px solid #aaa;
+                height: 1.3rem;
+                border-radius: 3px;
+                margin-top: 6px;
+                font-size: .9em;
+                line-height: 1.3em;
+            }
+        }
+    }
+    .widget-body {
+        margin-top: 5px;
+        height: calc(100% - 4rem);
+        overflow-y: scroll;
+        .widget {
+            background: #f9f9f9;
+            margin-bottom: 5px;
+            padding: 5px;
+            text-align: right;
+            position: relative;
+            overflow: hidden;
+            line-height: normal;
+            display: block;
+            
+            .date {
+                color: #aaa;
+                font-size: .7rem;
+                padding-inline-start: 2rem;
+            }
+            .Market-prices {
+                display: block;
+                position: relative;
+                right: 8px;
+                top: -12px;
+                .img {
+                    height: 22px;
+                    width: 22px;
+                }
+                .journal {
+                    font-size: .7rem;
+                    color: #3f3e3e;
+                }
+            }
+            .button-market-price {
+                display: inline-block;
+                border:1px solid #dcdcdc;
+                border-radius: 2px;
+                font-size: .75rem;
+                padding: 0 4px;
+                white-space: nowrap;
+                margin-top: 7px;
+                margin-right: 2.2rem;
+                float: right;
+
+                a {
+                    text-decoration: none;
+                    color: #1c9ad5;
+                }
+            }
+            .view {
+                display: inline-block;
+                float: left;
+                border: 1px solid #1c9ad5;
+                font-size: .7rem;
+                text-decoration: none;
+                border-radius: 3px;
+                padding: 0 7px;
+                color: #aaa;
+                line-height: 1.3rem;
+                &:hover {
+                    background: #1c9ad5;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

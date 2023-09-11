@@ -1,0 +1,63 @@
+
+<table class="watchlist">
+    <thead>
+        <tr>
+            <th>نماد</th>
+            <th>حجم</th>
+            <th>تابلو</th>
+            <th>پایانی</th>
+            <th class="best-buy">تقاضا</th>
+            <th class="best-sell">عرضه</th>
+            <th>سربه سر</th>
+            <th>بازده</th>
+            <th>موجودی&nbsp;(پورتفو%)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of instrumentsTable">
+            <td class="td-one">{{item.title}}</td>
+            <td>{{item.volume}}</td>
+            <td class="panel">
+                <div>
+                    <span class="left">{{item.percentPanel}}</span>
+                    <span class="right">{{item.panel}}</span>
+                </div>
+            </td>
+            <td class="four-td">
+                <span class="left">{{item.percent}}</span>
+                <span class="right">{{item.price}}</span>
+            </td>
+            <td class="five">
+                <div class="td-five">
+                    <div class="buy"> 
+                        <span>{{item.buy}}</span>
+                    </div>
+                    <div class="left">
+                        <span class="left">{{item.currency}}</span>
+                        <span class="right">{{item.demandPrice}}</span>
+                    </div>
+                    <div class="right">{{item.demand}}</div> 
+                </div>
+            </td>
+            <td class="six">
+                <div class="td-six">
+                   
+                    <div class="left">
+                        <span>{{item.demand}}</span>
+                    </div>
+                    <div class="right">
+                        <span class="left">{{item.currency}}</span>
+                        <span>{{item.supply}}</span>
+                    </div>
+                    <div class="sale">
+                        <span>{{item.sale}}</span>
+                    </div>
+                </div>
+            </td>
+            <td class="zero">{{item.brEven}}</td>
+            <td class="zero">{{item.returns}}</td>
+            <td class="zero">{{item.inv}}</td>
+        </tr>
+    
+    </tbody>
+</table>

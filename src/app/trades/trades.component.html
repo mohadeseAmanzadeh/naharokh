@@ -1,0 +1,23 @@
+<div class="header-trades">
+    <div class="refresh">
+        <img title="بروزرسانی" src="https://icongr.am/entypo/cw.svg?size=20&color=a1a1a1" alt="">
+    </div>
+    <div class="row-right">
+        <ul>
+            <li [ngClass]="{'active': activeOrder == title.id}" (click)="activeOrder = title.id" *ngFor="let title of titleList" class="li"></li>
+            <!-- <li class="li">سفارش های درجریان</li>
+            <li class="li">معاملات امروز</li> -->
+        </ul>
+    </div>
+    <div class="filter">فیلتر نماد :</div>
+    <div class="list-filter">
+        <img src="/assets/images/filter.png" alt="">
+        <input type="text" placeholder="انتخاب نماد">
+        <ul></ul>
+    </div>
+    <div>
+        <app-draft-order *ngIf="activeOrder == 1"></app-draft-order>
+        <app-current-order *ngIf="activeOrder == 2"></app-current-order>
+        <app-todays-deals *ngIf="activeOrder == 3"></app-todays-deals>
+    </div>
+</div>

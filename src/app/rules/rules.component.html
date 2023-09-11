@@ -1,0 +1,24 @@
+<div class="pane-container">
+   
+    <div class="pane-handler">
+    </div>
+    <div class="columns">
+        <div class="columns-one">
+           
+            <div class="widget-body">
+                <app-orders *ngIf="activeBody == 1"></app-orders>
+                <app-message *ngIf="activeBody == 3"></app-message>
+                <app-analysis *ngIf="activeBody == 4"></app-analysis>
+                <app-investment *ngIf="activeBody == 5"></app-investment>
+                <app-condition *ngIf="activeBody == 2"></app-condition>
+            </div>
+        </div>
+        <div class="columns-two">
+            <ul>
+                <li [ngClass]="{'active': activeBody == icon.id}" (click)="activeBody = icon.id" *ngFor="let icon of iconList" class="li" title="{{icon.title}}">
+                    <img src="{{icon.img}}" alt="">
+                </li>
+            </ul>
+        </div>
+</div>
+

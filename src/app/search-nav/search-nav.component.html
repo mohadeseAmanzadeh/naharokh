@@ -1,0 +1,78 @@
+<div class="search">
+    <div class="right-text">
+        <div class="div-stoke">
+            <form class="form">
+                <div class="input-list-title">
+                    <input type="text" (click)="activeMenuSub = !activeMenuSub">
+                    <div
+                     class="menu-sub" 
+                     [ngClass]=" {'active' : activeMenuSub}">
+                        <div class="row-one">
+                            <span>
+                                <a href="">فهرست های من</a>
+                            </span>
+                            <span>
+                                <a href="">صنایع</a>
+                            </span>
+                        </div>
+                        <div class="row-two">
+                            <div class="add">
+                                <form action="">
+                                    <input type="text" placeholder="افزودن فهرست">
+                                    <img src="https://icongr.am/clarity/add.svg?size=18&color=535050" alt="">
+                                </form>
+                            </div>
+                            <div class="list-items">
+                                <div class="item" *ngFor="let item of listItems">
+                                    <span>{{item.title}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <span class="list-icon">
+                <img class="edit"  title="ویرایش" src="https://icongr.am/fontawesome/edit.svg?size=18&color=4f5255" alt="">
+                <a href="" title="نقشه بازار">
+                    <img src="https://icongr.am/material/collage.svg?size=20&color=4f5255" alt="">
+                </a>
+                <a href="" title="خروجی اکسل">
+                    <img class="excel" src="/assets/images/brand-microsoft-excel-svgrepo-com (1).svg" alt="">
+                </a>
+            </span>
+        </div>
+        <div class="column2">
+            <span>
+                <input (click)="activeDropdownSearch = !activeDropdownSearch" type="text" placeholder="افزودن نماد به فهرست">
+                <img src="https://icongr.am/clarity/search.svg?size=15&color=666" alt="">
+            </span>
+            <div 
+                class="dropdown-search"
+                [ngClass]="{'active': activeDropdownSearch}">
+                <div class="dropdown-item" *ngFor="let item of favList">
+                    <img class="image-search" src="{{item.img}}" alt="">
+                    <label for="">{{item.title}}</label>
+                    <small>{{item.desc}}</small>
+                </div>  
+            </div>
+        </div>
+        <div class="menu-select">
+            <select name="" id="">
+                <option value="">همه</option>
+                <option value="">نمادهای باز</option>
+                <option value="">نمادهای بسته</option>
+            </select>
+        </div>
+    </div>
+    <div class="left-text">
+        <div class="text-l">
+            <span>شاخص کل:</span>
+            <span>1,993,085.36 &nbsp;</span>
+            <span class="th-child">46,492.43</span>
+            <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+            <span>شاخص فرابورس:</span>
+            <span>26,535.13 &nbsp;</span>
+            <span class="last-ch">(5.7) &nbsp;</span>
+        </div>
+    </div>
+</div>

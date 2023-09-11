@@ -1,0 +1,44 @@
+<div class="header-vertical">
+    <div class="supervisor">
+        <img class="email" src="https://icongr.am/entypo/mail.svg?color=1c9ad5&size=19" alt="">
+        <span class="text">پیام های ناظر بازار</span>
+        <span class="refresh-icon">
+            <img src="https://icongr.am/entypo/cw.svg?size=15&color=a1a1a1" alt="">
+        </span>
+    </div>
+    <div class="history">
+        <a href="">
+            <div class="icon-history">
+                <img src="https://icongr.am/clarity/history.svg?size=17&color=8f8d8d" alt="">
+            </div>
+            <span class="title-h">سابقه</span>
+        </a>
+    </div>
+</div>
+<div class="search-box">
+    <div class="search">
+        <input type="text" placeholder="جستجو">
+        <img src="https://icongr.am/clarity/search.svg?size=14&color=535252" alt="">
+    </div>
+    <div class="switch-btn">
+        <span>
+            <!-- <input type="checkbox"> -->
+            <img src="https://icongr.am/fontawesome/toggle-on.svg?color=7d7d7d&size=23" alt="">
+        </span>
+        <span class="filter">فیلتر براساس دیده بان</span>
+    </div>
+</div>
+<div class="widget">
+    <div class="row" *ngFor="let message of messages">
+        <div class="text-right">{{message.title}}</div>
+        <div class="row-left">
+            <div class="expand">
+                <img src="{{message.img}}" alt="">
+            </div>
+            <div class="time">{{getSystemTime()}}</div>
+        </div>
+        <div class="desc">
+            {{message.desc}}
+        </div>
+    </div>
+</div>
