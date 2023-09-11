@@ -1,0 +1,122 @@
+.table-buy {
+    // margin-top: 3px;
+    border-radius: 3px;
+    display: inline-block;
+    float: right;
+    width: calc(50% - 5px);
+    font-size: 0.75rem;
+    font-family: tahoma;
+    color: #333;
+    height: 100%;
+    line-height: 1.3rem;
+    background: #baf5da;
+    text-align: center;
+    margin-inline-start: 3px;
+    padding: 0;
+    
+    div {
+        margin: 0;
+        height: 100%;
+        border-left: 1px solid #fff;
+        display: inline-block;
+    }
+
+    .table-cell:first-child {
+        border-left: 0;
+        width: 15px;
+        input {
+            margin: 0;
+            position: relative;
+            top: 2px;
+            left: 2px;
+            
+        }
+      
+    }
+    .symbol {
+        width: 11%;
+        background: url(	https://www.nahayatnegar.com/images/sort.png) 99% center no-repeat;
+    }
+
+    .volume {
+        border-color: #999;
+        width: 22%;
+        background: url(	https://www.nahayatnegar.com/images/sort.png) 98% center no-repeat;
+    }
+    .price {
+        border-color: #999;
+        width: 22%;
+        background: url(	https://www.nahayatnegar.com/images/sort.png) 98% center no-repeat;
+    }
+    .supply {
+        width: 17%;
+    }
+    .validity {
+        width: 12%;
+    }
+    .operation {
+       width: 13%;
+       border-left: none;
+    }
+    
+
+
+}
+.table-sell {
+    // margin-top: 3px;
+    border-radius: 3px;
+    display: inline-block;
+    float: left;
+    line-height: 1.3rem;
+    font-size: 0.75rem;
+    font-family: tahoma;
+    width: calc(50% - 5px);
+    margin-inline-end: 3px;
+    height: 100%;
+    background: #ffb4ae;
+    text-align: center;
+    color: #333;
+   
+        div {
+            height: 100%;
+            border-left: 1px solid #fff;
+            display: inline-block;
+        }
+        .table-cell:first-child {
+            border-left: 0;
+            width: 15px;
+            input {
+                margin: 0;
+                position: relative;
+                top: 2px;
+                left: 2px;
+            } 
+        }
+        .symbol {
+            height: 100%;
+            width: 11%;
+            background: url(	https://www.nahayatnegar.com/images/sort.png) 99% center no-repeat;
+        }
+        .volume {
+            border-color: #999;
+            width: 22%;
+            background: url(	https://www.nahayatnegar.com/images/sort.png) 98% center no-repeat;
+        }
+        .price {
+            border-color: #999;
+            width: 22%;
+            background: url(	https://www.nahayatnegar.com/images/sort.png) 98% center no-repeat;
+        }
+        .demand {
+            width: 17%;
+        }
+        .validity {
+            width: 12%;
+        }
+        .operation {
+           width: 13.5%;
+           border-left: none;
+        }
+   
+
+    }

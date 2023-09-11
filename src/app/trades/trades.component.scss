@@ -87,125 +87,13 @@
 
 
     }
+    
 }
 .trades-list {
-    box-sizing: border-box;
-    display: block;
-    width: calc(100% - 2px);
     height: 23px;
-    padding: 1px 0;
-    font-size: 0.75rem;
-    font-family: tahoma;
-    color: #333;
-    .table-buy {
-        display: flex;
-        float: right;
-        width: calc(50% - 3px);
-        height: 100%;
-        background: #baf5da;
-        text-align: center;
-        margin: 0;
-        margin-inline-start: 3px;
-        padding: 0;
-        
-        div {
-            border-left: 1px solid #fff;
-        }
+    width: 100%;
+}
 
-        .table-cell:first-child {
-            border-left: 0;
-            border-top-right-radius: 3px;
-            border-bottom-right-radius: 3px;
-        }
-        .symbol {
-            width: 10.5%;
-            background: url(	https://www.nahayatnegar.com/images/sort.png) 99% center no-repeat;
-        }
-        .row {
-            width: 12%;
-            background: url(	https://www.nahayatnegar.com/images/sort.png) 98% center no-repeat;
-        }
-        .volume {
-            border-color: #999;
-            width: calc(22% - 15px);
-            background: url(	https://www.nahayatnegar.com/images/sort.png) 98% center no-repeat;
-        }
-        .table-cell:nth-child(5) {
-            width: 10.5%;
-            background: url(	https://www.nahayatnegar.com/images/sort.png) 98% center no-repeat
-        }
-        .price {
-            border-color: #999;
-            width: 12%;
-            background: url(	https://www.nahayatnegar.com/images/sort.png) 98% center no-repeat;
-        }
-        .supply {
-            width: 11%;
-        }
-        .validity {
-            width: 10.5%;
-        }
-        .operation {
-           width: 12%;
-        }
-        
-
-
-    }
-    .table-sell {
-        display: flex;
-        float: left;
-        width: calc(50% - 5px);
-        height: 100%;
-        background: #ffb4ae;
-        text-align: center;
-        margin: 0;
-        padding: 0;
-        color: #333;
-       
-            div {
-                border-left: 1px solid #fff;
-            }
-            .table-cell:first-child {
-                border-left: 0;
-                border-top-right-radius: 3px;
-                border-bottom-right-radius: 3px;
-            }
-            .symbol {
-                width: 10.5%;
-                background: url(	https://www.nahayatnegar.com/images/sort.png) 99% center no-repeat;
-            }
-            .row {
-                width: 12%;
-                background: url(	https://www.nahayatnegar.com/images/sort.png) 98% center no-repeat;
-            }
-            .volume {
-                border-color: #999;
-                width: calc(22% - 15px);
-                background: url(	https://www.nahayatnegar.com/images/sort.png) 98% center no-repeat;
-            }
-            .table-cell:nth-child(5) {
-                width: 10.5%;
-                background: url(	https://www.nahayatnegar.com/images/sort.png) 98% center no-repeat
-            }
-            .price {
-                border-color: #999;
-                width: 12%;
-                background: url(	https://www.nahayatnegar.com/images/sort.png) 98% center no-repeat;
-            }
-            .demand {
-                width: 11%;
-            }
-            .validity {
-                width: 10.5%;
-            }
-            .operation {
-               width: 12%;
-            }
-       
-    
-        }
-    }
 
 // .trades-list {
 //     width: 100%;
