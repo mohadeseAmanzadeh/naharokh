@@ -20,7 +20,7 @@
         line-height: 1.3rem;
         background: #baf5da;
         text-align: center;
-        margin-inline-start: 3px;
+        margin-inline-start: 5px;
         padding: 0;
         
         div {
@@ -33,7 +33,7 @@
         .table-cell:first-child {
             border-left: 0;
             input {
-                // margin: 0;
+                margin: 0;
                 position: relative;
                 top: 2px;
                 left: 2px;
@@ -85,8 +85,8 @@
         line-height: 1.3rem;
         font-size: 0.75rem;
         font-family: tahoma;
-        width: calc(50% - 5px);
-        margin-inline-end: 3px;
+        width: calc(50% - 10px);
+        margin-inline: 5px;
         height: 100%;
         background: #ffb4ae;
         text-align: center;
