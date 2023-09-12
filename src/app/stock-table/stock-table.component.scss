@@ -79,7 +79,7 @@ table {
                     }
                 }
                 .left {
-                    width: 43%;
+                    width: calc(43% - 2px);
                     // border-left: 2px solid #fff;
                     padding: 3px 3px 0 0; 
                     
