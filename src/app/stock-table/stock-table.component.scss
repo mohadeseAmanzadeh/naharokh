@@ -50,7 +50,10 @@ table {
                 }
         }
         .six {
-           
+           &:hover{
+            // display: block;
+            border: 1px solid #da7068;
+           }
             .td-six {
                 display: flex;
                 height: 27px;
@@ -71,7 +74,7 @@ table {
                     border-right: none;
                     transform: rotate(-180deg);
                     background: #da7068;
-                    display: none;
+                    // display: none;
                     span {
                         position: absolute;
                         top: 2px;
@@ -117,6 +120,9 @@ table {
         font-weight: 600;
     }
     tbody td:nth-child(5) {
+        &:hover {
+            border: 1px solid #3da777;
+        }
         // border: 1px solid #fff;
            .td-five {
             display: flex;
@@ -155,7 +161,7 @@ table {
                 border-left: none;
                 border-right: none;
                 background: #6ecaa1;
-                display: none;
+                // display: none;
                 span {
                    
                 }
