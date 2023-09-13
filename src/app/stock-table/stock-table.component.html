@@ -2,32 +2,32 @@
 <table class="watchlist">
     <thead>
         <tr>
-            <th>نماد</th>
-            <th>حجم</th>
-            <th>تابلو</th>
-            <th>پایانی</th>
-            <th class="best-buy">تقاضا</th>
-            <th class="best-sell">عرضه</th>
-            <th>سربه سر</th>
-            <th>بازده</th>
-            <th>موجودی&nbsp;(پورتفو%)</th>
+            <th class="instrument">نماد</th>
+            <th class="volume-th">حجم</th>
+            <th class="price-change">تابلو</th>
+            <th class="closing-price-change">پایانی</th>
+            <th class="best-buy-th">تقاضا</th>
+            <th class="best-sell-th">عرضه</th>
+            <th class="pb">سربه سر</th>
+            <th class="dr-th">بازده</th>
+            <th class="gt-th">موجودی&nbsp;(پورتفو%)</th>
         </tr>
     </thead>
     <tbody>
         <tr *ngFor="let item of instrumentsTable">
-            <td class="td-one">{{item.title}}</td>
-            <td>{{item.volume}}</td>
-            <td class="panel">
+            <td class="instrument">{{item.title}}</td>
+            <td class="volume-td">{{item.volume}}</td>
+            <td class="price-change-td">
                 <div>
                     <span class="left">{{item.percentPanel}}</span>
                     <span class="right">{{item.panel}}</span>
                 </div>
             </td>
-            <td class="four-td">
+            <td class="closing-price-change-td">
                 <span class="left">{{item.percent}}</span>
                 <span class="right">{{item.price}}</span>
             </td>
-            <td class="five">
+            <td class="best-buy-td">
                 <div class="td-five">
                     <div class="buy"> 
                         <span>{{item.buy}}</span>
@@ -39,12 +39,12 @@
                     <div class="right">{{item.demand}}</div> 
                 </div>
             </td>
-            <td class="six">
+            <td class="best-sell-td">
                 <div class="td-six">
-                    <div class="left">
+                    <div class="right">
                         <span>{{item.demand}}</span>
                     </div>
-                    <div class="right">
+                    <div class="left">
                         <span class="left">{{item.currency}}</span>
                         <span>{{item.supply}}</span>
                     </div>
@@ -53,9 +53,9 @@
                     </div>
                 </div>
             </td>
-            <td class="zero">{{item.brEven}}</td>
-            <td class="zero">{{item.returns}}</td>
-            <td class="zero">{{item.inv}}</td>
+            <td class="pb">{{item.brEven}}</td>
+            <td class="dr-td">{{item.returns}}</td>
+            <td class="gt-td">{{item.inv}}</td>
         </tr>
     
     </tbody>
