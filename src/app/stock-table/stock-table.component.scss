@@ -238,9 +238,6 @@
             .left {
                 float: left;
             }
-            .right {
-                float: right;
-            }
             td {
                 padding: 1px 4px;
                 border-left: 1px solid #efefef;
@@ -281,17 +278,20 @@
                     height: 25px;
                     background: #b4e5cf;
                     // margin-top: 1px;
-                    font-size: .9em;
+                    // font-size: .9em;
                     display: inline-block;
+                    .right {
+                        padding-right: 3px;
+                    }
                 }
                 .best-buy-right {
-                    position: relative;
-                    top: -7px;
+                    // position: relative;
+                    // top: -7px;
                     border-left: 2px solid #fff;
                     width: 43%;
                     display: inline-block;
                     background: #b4e5cf;
-                    font-size: .9em;
+                    // font-size: .9em;
                     margin-top: 1px;
                     height: 25px;
                     text-align: right !important;
@@ -319,6 +319,9 @@
                     // margin-right: -2px;
                     display: inline-block;
                     height: 25px;
+                    span {
+                        padding-right: 3px;
+                    }
                 }
                 .best-sell-right {
                     width: 57%;
@@ -326,6 +329,12 @@
                     display: inline-block;
                     background: #f6c2c4;
                     border-left: 2px solid #fff;
+                    .left {
+
+                    }
+                    .right-text {
+                        padding-right: 3px;
+                    }
                 }
             }
             .pb {
