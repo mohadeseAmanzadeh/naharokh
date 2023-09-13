@@ -19,16 +19,26 @@
             <td class="volume-td">{{item.volume}}</td>
             <td class="price-change-td">
                 <div>
-                    <span class="left">{{item.percentPanel}}</span>
-                    <span class="right">{{item.panel}}</span>
+                    <div class="left">{{item.percentPanel}}</div>
+                    <div class="right">{{item.panel}}</div>
                 </div>
             </td>
             <td class="closing-price-change-td">
-                <span class="left">{{item.percent}}</span>
-                <span class="right">{{item.price}}</span>
+                <div class="left">{{item.percent}}</div>
+                <div class="right">{{item.price}}</div>
             </td>
             <td class="best-buy-td">
-                <div class="td-five">
+                <div class="best-buy-left">
+                    <span class="left">{{item.currency}}</span>
+                    <span class="right">{{item.demandPrice}}</span>
+                </div>
+                <div class="best-buy-right">
+                    <span>{{item.demand}}</span>
+                </div> 
+                <div class="title-buy">
+                    <span>{{item.buy}}</span>
+                </div>
+                <!-- <div class="td-five">
                     <div class="buy"> 
                         <span>{{item.buy}}</span>
                     </div>
@@ -37,10 +47,20 @@
                         <span class="right">{{item.demandPrice}}</span>
                     </div>
                     <div class="right">{{item.demand}}</div> 
-                </div>
+                </div> -->
             </td>
             <td class="best-sell-td">
-                <div class="td-six">
+                <div class="title-sell">
+                    <span>{{item.sale}}</span>
+                </div>
+                <div class="best-sell-left">
+                    <span>{{item.demand}}</span>
+                </div>
+                <div class="best-sell-right">
+                    <span class="left">{{item.currency}}</span>
+                    <span>{{item.supply}}</span>
+                </div>
+                <!-- <div class="td-six">
                     <div class="right">
                         <span>{{item.demand}}</span>
                     </div>
@@ -51,7 +71,7 @@
                     <div class="sale">
                         <span>{{item.sale}}</span>
                     </div>
-                </div>
+                </div> -->
             </td>
             <td class="pb">{{item.brEven}}</td>
             <td class="dr-td">{{item.returns}}</td>

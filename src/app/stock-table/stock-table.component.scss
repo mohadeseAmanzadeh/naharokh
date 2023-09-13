@@ -225,12 +225,22 @@
     } 
     tbody {
         display: inline-block; 
+       
         tr {
             height: 27px;
             line-height: 27px;
             overflow-y: hidden;
             display: flex;
             flex-flow: row nowrap;
+            &:nth-child(even) {
+                background: #f1f1f1;
+            }
+            .left {
+                float: left;
+            }
+            .right {
+                float: right;
+            }
             td {
                 padding: 1px 4px;
                 border-left: 1px solid #efefef;
@@ -249,6 +259,16 @@
             .price-change-td {
                 padding: 2px 3px;
                 flex: 1 0 calc(14% - 18px);
+                div {
+                    background: #ffb4ae;
+                    height: 100%;
+                    .left {
+                        padding-left: 2px;
+                    }
+                    .right {
+                        padding-right: 3px;
+                    }
+                }
             }
             .closing-price-change-td {
                 flex: 1 0 12.5%;
@@ -256,10 +276,57 @@
             .best-buy-td {
                 flex: 1 0 14.5%;
                 border-right: 5px solid #efefef;
+                .best-buy-left {
+                    width: calc(57% - 1px);
+                    height: 25px;
+                    background: #b4e5cf;
+                    // margin-top: 1px;
+                    font-size: .9em;
+                    display: inline-block;
+                }
+                .best-buy-right {
+                    position: relative;
+                    top: -7px;
+                    border-left: 2px solid #fff;
+                    width: 43%;
+                    display: inline-block;
+                    background: #b4e5cf;
+                    font-size: .9em;
+                    margin-top: 1px;
+                    height: 25px;
+                    text-align: right !important;
+                    span {
+                        line-height: 20px;
+                        padding-right: 3px;
+                        vertical-align: -1px;
+                        display: inline-block;
+                    }
+                    // margin-left: -2px;
+                }
+                .title-buy {
+                    display: none;
+                }
             }
             .best-sell-td {
                 flex: 1 0 14.5%;
                 border-left-width: 5px;
+                .title-sell {
+                    display: none;
+                }
+                .best-sell-left {
+                    width: 43%;
+                    background: #f6c2c4;
+                    // margin-right: -2px;
+                    display: inline-block;
+                    height: 25px;
+                }
+                .best-sell-right {
+                    width: 57%;
+                    height: 25px;
+                    display: inline-block;
+                    background: #f6c2c4;
+                    border-left: 2px solid #fff;
+                }
             }
             .pb {
                 flex: 1 0 5.5%;
