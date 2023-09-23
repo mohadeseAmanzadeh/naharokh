@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./message.component.scss']
 })
 export class MessageComponent {
+  public activeMessage: boolean = false;
   public messages = [
     { id:1,
       title: 'بازگشایی مرتبه دوم معاملاتی(کباده1)',

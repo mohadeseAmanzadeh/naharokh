@@ -33,11 +33,12 @@
         <div class="text-right">{{message.title}}</div>
         <div class="row-left">
             <div class="expand">
-                <img src="{{message.img}}" alt="">
+                <img src="{{message.img}}" alt="" (click)="activeMessage = !activeMessage">
             </div>
             <div class="time">{{getSystemTime()}}</div>
         </div>
-        <div class="desc">
+        <div class="desc" 
+        [ngClass]="{'active' : activeMessage}">
             {{message.desc}}
         </div>
     </div>

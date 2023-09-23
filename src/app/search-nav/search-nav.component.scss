@@ -289,13 +289,20 @@
             color: #54575e;
             width: 30%;
             text-align: end;
-
-                .th-child {
-                        color: #3cc73c;
-                }
-                .last-ch {
-                        color: #f53b3b;
-                }
+            .th-child {
+                color: #3cc73c;
+            }
+            .last-ch {
+                color: #f53b3b;
+            }
                 
-        }
+        }     
 }
+
+
+@media screen and (max-width: 768px) {
+    .left-text {
+        background-color: #3cc73c;
+    }
+
+ }

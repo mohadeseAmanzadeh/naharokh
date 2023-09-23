@@ -107,18 +107,26 @@
       .row {
         transition: all .2s;
         width: 100%;
-        padding: 7px 4px;
+        min-height:50px ;
+        padding: 7px 0px;
         min-height: 50px;
         cursor: pointer;
         margin: 0 0 1px;
         font-family: tahoma;
+        &:nth-child(odd) {
+            background: #f8fafb;
+        }
+        &:hover {
+            background: #dbdbdb;
+            
+        }
         .text-right {
             color: #444;
             font-size: 9px;
             width: 83.3%;
             position: relative;
             float: right;
-           
+            padding-right: 4px;
         }
         .row-left {
             width: 16.6%;
@@ -148,15 +156,19 @@
             font-size: 11px;
             width: 100%;
             display: none;
+            background: #f8fafb;
+            line-height: 1.2rem;
+            padding-inline: 12px;
+            font-size: .6em;
+            &.active {
+                display: block;
+            }
+            &:hover {
+                background: #dbdbdb;
+            }
         }
     
-        &:nth-child(odd) {
-            background: #f8fafb;
-        }
-        &:hover {
-            background: #dbdbdb;
-            
-        }
+      
     }
 }
 ::-webkit-scrollbar {

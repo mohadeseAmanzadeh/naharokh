@@ -284,6 +284,13 @@
                     .right {
                         padding-right: 3px;
                     }
+                    .left {
+                        transform: rotate(-90deg);
+                        width: 23px;
+                        height: 17px;
+                        font-size: .75em;
+                        line-height: 11px;
+                    }
                 }
                 .best-buy-right {
                     // position: relative;
