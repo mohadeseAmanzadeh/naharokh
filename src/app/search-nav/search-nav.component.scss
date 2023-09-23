@@ -180,7 +180,6 @@
                         margin-inline-start: 7px;
                         margin-inline-end: 7px;
                         input {
-                            
                             background: #fff;
                             color: #666;
                             height: 23px;
@@ -301,8 +300,30 @@
 
 
 @media screen and (max-width: 768px) {
-    .left-text {
-        background-color: #3cc73c;
+    .right-text {
+        width: calc(59% - 6px) !important;
+        .div-stoke {
+            width: 45% !important;
+        }
+        .column2 {
+            width: 28% !important;
+            input::placeholder {
+                font-size: .56rem !important;
+                position: relative;
+                bottom: 2px;
+                right: 2px;
+            }
+            img {
+                width: 13px !important;
+            }
+        }
+        .menu-select {
+            width: 18% !important;
+        }
     }
+   .left-text {
+    font-size: .6rem !important;
+    width: 41% !important;
+   }
 
  }

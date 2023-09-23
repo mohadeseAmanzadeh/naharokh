@@ -117,6 +117,12 @@
            width: 13.5%;
            border-left: none;
         }
-   
-
+    }
+    @media screen and (max-width: 768px) {
+        .symbol {
+            // width: 10% !important;
+        }
+        .volume {
+            width: 20px !important;
+        }
     }

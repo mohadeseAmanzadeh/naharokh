@@ -141,7 +141,6 @@
                 float: left;
                 // position: relative;
                 // left: -20px;
-
                 .img-horse {
                 position: relative;
                 top: 11%;
@@ -171,7 +170,7 @@
             .user {
                 text-align: right;
                 white-space: nowrap;
-                font-size: .80rem;
+                font-size: .8rem;
                 
                
                 
@@ -334,4 +333,91 @@
 
 
     }
+@media screen and (max-width: 768px){
+   .header {
+   
+    .el-right {
+        width: 50% !important;
+        // display: flex;
+        .logo-img {
+            // position: relative;
+            // right: 4rem !important;
+        }
+        .message {
+            right: 1rem !important;
+        }
+        .menu-header {
+            height: 350px !important;
+            background-color: #474747;
+            display: none;
+    
+            position: relative;
+            right: -2rem;
+        //    background-color: #474747;
+          
+        }
+        .title-menu {
+        
+            
+        }
+        .title-menu {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            height: 100%; 
+            font-size: .8rem !important;
+            .i-title-menu {
+              .title-menuheader {
+                text-align: right;
+              }
+            }
+        }
+    }
+    .el-left {
+       width: 50% !important;
+       .user-details{
+        width: 35% !important;
+        .user {
+            font-size: .7rem !important;
+        }
+        .nahabarg-hr {
+            // width: 70% !important;
+           }
+           .nahabarg {
+            a {
+                font-size: .7rem !important;
+            }
+           }
+       }
+      
+       .logo-out {
+        #logoutModel {
+            .logout {
+                width: 15px !important;
+            }
+            span {
 
+            }
+        }
+       }
+       .home-logo {
+        top: 15px !important;
+        left: 3.8rem !important;
+        img {
+            width: 17px !important;
+        }
+       }
+       .img-pro {
+        top: 6px !important;
+        .business-m {
+            // margin-top: 7px !important;
+            width: 25px !important;
+            height: 25px !important;
+           } 
+       }
+    }
+   }
+   
+}

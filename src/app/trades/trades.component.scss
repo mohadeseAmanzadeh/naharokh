@@ -77,9 +77,8 @@
         img {
             width: 17px;
             position: relative;
-            top: 1.2rem;
+            top: -1.2rem;
             right: 2px;
-
             // color: #999;
             // z-index: 12;
             
@@ -96,7 +95,17 @@
     height: 23px;
     width: 100%;
 }
-
+@media screen and (max-width: 768px) {
+    .li {
+        font-size: .6em !important;
+    }
+    .filter {
+        font-size: .7rem !important;
+        position: absolute;
+        left: 10rem !important;
+    }
+    
+}
 
 // .trades-list {
 //     width: 100%;

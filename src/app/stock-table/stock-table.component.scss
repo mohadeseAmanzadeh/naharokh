@@ -288,7 +288,10 @@
                         transform: rotate(-90deg);
                         width: 23px;
                         height: 17px;
-                        font-size: .75em;
+                        position: relative;
+                        top: 4px;
+                        font-size: 0.56rem;
+                        text-align: center;
                         line-height: 11px;
                     }
                 }
@@ -338,6 +341,14 @@
                     background: #f6c2c4;
                     border-left: 2px solid #fff;
                     .left {
+                        transform: rotate(-90deg);
+                        width: 23px;
+                        height: 17px;
+                        position: relative;
+                        top: 4px;
+                        font-size: 0.56rem;
+                        text-align: center;
+                        line-height: 11px;
 
                     }
                     .right-text {
@@ -355,5 +366,22 @@
                 flex: 1 0 10.5%;
             }
         }
+    }
+}
+@media screen and (max-width: 768px) {
+    .watchlist {
+        font-size: 10px;
+        .best-buy-left {
+           .left {
+            font-size: .5rem !important;
+            left: -2px;
+           }
+        }
+        .best-sell-right {
+            .left {
+                font-size: .5rem !important;
+                left: -2px;
+            }
+           }
     }
 }
