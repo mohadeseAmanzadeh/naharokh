@@ -244,6 +244,9 @@
         direction: rtl;
         width: 60%;
         height: 100%;
+        .menu-hum {
+            display: none;
+        }
         
         .logo-img {
             float: right;
@@ -339,39 +342,66 @@
     .el-right {
         width: 50% !important;
         // display: flex;
+        .menu-hum {
+            display: block;
+            margin: 0;
+            padding: 0;
+            margin-top: .8rem;
+            margin-right: .6rem;
+        }
         .logo-img {
-            // position: relative;
+            margin: 0 !important;
+            position: relative;
+            top: -2rem;
+            right: 3rem;
             // right: 4rem !important;
         }
         .message {
-            right: 1rem !important;
+            right: 3rem !important;
+            top: -1.7rem !important;
+            // right: 1rem !important;
         }
         .menu-header {
-            height: 350px !important;
-            background-color: #474747;
             display: none;
-    
-            position: relative;
-            right: -2rem;
-        //    background-color: #474747;
-          
-        }
-        .title-menu {
-        
-            
+            height: 350px !important;
+            // height: 560px !important;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            background-color: #474747;
+            position: absolute;
+            width: 150px;
+            background: #2ba4bd;
+            top: 51px;
+            right: -3rem;
+            &.active {
+                display: block;
+            }
         }
         .title-menu {
             list-style: none;
-            display: flex;
-            flex-direction: column;
             margin: 0;
-            padding: 0;
-            height: 100%; 
-            font-size: .8rem !important;
+            padding: 0; 
             .i-title-menu {
-              .title-menuheader {
-                text-align: right;
-              }
+                width: 100% !important;
+                .title-menuheader {
+                font-size: .75rem !important;
+                text-align: right !important;
+                // &:hover .sub-menu{
+                //     display: block;
+                // }
+                }
+                .sub-menu {
+                    margin-top: -48px;
+                    right: 150px !important;
+                    width: 150px !important;
+                    font-size: .7rem !important;
+                    // &:last-child {
+                    //     height: 270px !important;
+                    //     overflow-y: scroll;
+                    // } 
+                }
+
+
             }
         }
     }

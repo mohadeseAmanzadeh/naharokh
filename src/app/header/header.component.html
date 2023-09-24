@@ -108,6 +108,9 @@
     </div>
 
     <div class="el-right">
+        <div class="menu-hum" (click)="ActiveMenu = !ActiveMenu">
+            <img src="https://icongr.am/entypo/menu.svg?color=ffffff&size=27" alt="">
+        </div>
         <div class="logo-img">
             <img src="/assets/images/logo.png" alt="">
         </div>
@@ -116,7 +119,8 @@
                 <img src="https://icongr.am/material/comment-text-outline.svg?size=25&color=ffffff" alt="">
             </a>
         </div>
-        <div class="menu-header">
+        <div class="menu-header" 
+        [ngClass]="{'active' : ActiveMenu}">
             <ul class="title-menu">
                 <li class="i-title-menu" *ngFor="let item of MenuHeader">
                     <a class="title-menuheader" href="">{{item.title}}</a>
@@ -125,10 +129,8 @@
                             <a class="title-sub-menu">{{subMenuItem.title}}</a>
                         </li>
                     </ul>
-                </li>
-                       
+                </li>        
             </ul>
         </div>
     </div>
-    
  </div>

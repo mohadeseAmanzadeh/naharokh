@@ -300,6 +300,8 @@
 
 
 @media screen and (max-width: 768px) {
+   .search {
+    width: 100%;
     .right-text {
         width: calc(59% - 6px) !important;
         .div-stoke {
@@ -326,4 +328,5 @@
     width: 41% !important;
    }
 
+   }
  }

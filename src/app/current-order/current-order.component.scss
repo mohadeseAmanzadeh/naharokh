@@ -1,27 +1,33 @@
-// .current {
-//     box-sizing: border-box;
-//     display: block;
-//     width: calc(100% - 2px);
-//     height: 23px;
-//     padding: 1px 0;
-//    
-  
-//     }
+.current {
+    font-size: .75rem;
+    font-family: tahoma;
+    color: #333;
+    line-height: 1.3rem;
+    text-align: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    // box-sizing: border-box;
+    // display: block;
+    // width: calc(100% - 2px);
+    // height: 23px;
+    // padding: 1px 0;
     .table-buy {
+        margin-inline: 2px;
         // margin-top: 3px;
         border-radius: 3px;
-        display: inline-block;
-        float: right;
-        width: calc(50% - 5px);
-        font-size: 0.75rem;
-        font-family: tahoma;
-        color: #333;
-        height: 100%;
-        line-height: 1.3rem;
+        // display: inline-block;
+        // float: right;
+        // width: calc(50% - 5px);
+        // font-size: 0.75rem;
+        // font-family: tahoma;
+        // color: #333;
+        // height: 100%;
+        // line-height: 1.3rem;
         background: #baf5da;
-        text-align: center;
-        margin-inline-start: 5px;
-        padding: 0;
+        // text-align: center;
+        // margin-inline-start: 5px;
+        // padding: 0;
         
         div {
             margin: 0;
@@ -78,19 +84,20 @@
 
     }
     .table-sell {
+        margin-inline: 2px;
         // margin-top: 3px;
         border-radius: 3px;
-        display: inline-block;
-        float: left;
-        line-height: 1.3rem;
-        font-size: 0.75rem;
-        font-family: tahoma;
-        width: calc(50% - 10px);
-        margin-inline: 5px;
-        height: 100%;
+        // display: inline-block;
+        // float: left;
+        // line-height: 1.3rem;
+        // font-size: 0.75rem;
+        // font-family: tahoma;
+        // width: calc(50% - 10px);
+        // margin-inline: 5px;
+        // height: 100%;
         background: #ffb4ae;
-        text-align: center;
-        color: #333;
+        // text-align: center;
+        // color: #333;
        
             div {
                 height: 100%;
@@ -144,3 +151,12 @@
        
     
         }
+  
+    }
+    @media screen and (max-width: 768px) {
+        .current {
+            grid-template-columns: auto;
+            grid-row-gap: 4px;
+        }
+    }
+   
