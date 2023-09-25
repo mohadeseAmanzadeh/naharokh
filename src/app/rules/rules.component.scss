@@ -52,15 +52,25 @@
 //     }
     
 // }
+// .pane-handler {
+//     d
+// }
 .pane-handler {
     width: 5px;
-    background: #fff;
-    opacity: 1;
-    display: inline-block;
-    direction: ltr;
     cursor: pointer;
+    position: absolute;
     height: 100%;
-    float: right;
+    top: 0;
+    right: 0px;
+    z-index: 10;
+    &:hover {
+        background: #b9b9b9;
+    }
+    img {
+        position: absolute;
+        top: 50%;
+        right: -7px;
+    }
 }
 .columns {
     width: calc(100% - 5px);
@@ -76,11 +86,7 @@
             width: 100%;
             height: 100%;
             position: relative;
-
-
-
-        }
-        
+        } 
     }
     .columns-two {
         height: 100%;
@@ -128,12 +134,26 @@
 @media screen and (max-width: 768px) {
     .pane-container {
         background: #fff;
-        // display: block;
-        // display: none;
-        // &.active{
-        //     display: block;
-        //     z-index: 999;
-        // }
+        &.active{
+            display: block;
+        }  
+    }
+    .pane-handler {
+        width: 18px;
+        cursor: pointer;
+        position: absolute;
+        height: 100%;
+        top: 0;
+        right: 3px;
+        z-index: 10;
+        &:hover {
+            background: #a9abaf;
+        }
+        img {
+            position: absolute;
+            top: 50%;
+            right: -6px;
+        }
     }
 }
 

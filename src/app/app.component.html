@@ -6,14 +6,14 @@
   <div class="nav-vertical">
     <app-nav-vertical></app-nav-vertical>
   </div>
-  <div class="button" >
+  <div class="vertical">
+    <app-rules></app-rules>
+  </div>
+  <!-- <div class="drop-btn" >
     <img class="drop"
       (click)="ActiveVertical = !ActiveVertical"
       src="https://icongr.am/feather/chevron-right.svg?size=16&color=6b6b6b" alt="">
-  </div>
-  <div class="vertical" [ngClass]="{'active' : ActiveVertical}">
-    <app-rules></app-rules>
-  </div>
+  </div> -->
   <div class="main">
       <div class="section-one">
         <app-stock-table></app-stock-table>

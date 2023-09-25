@@ -1,9 +1,11 @@
+<div class="pane-handler" [ngClass]="{'active' : activeVertical}">
+    <img
+        (click)="activeVerticalPanel()"
+        src="https://icongr.am/feather/chevron-right.svg?size=18&color=6b6b6b" alt="">
+</div>
 <div class="pane-container">
-    <div class="pane-handler">
-    </div>
     <div class="columns">
         <div class="columns-one">
-           
             <div class="widget-body">
                 <app-orders *ngIf="activeBody == 1"></app-orders>
                 <app-message *ngIf="activeBody == 3"></app-message>
@@ -20,4 +22,3 @@
             </ul>
         </div>
 </div>
-

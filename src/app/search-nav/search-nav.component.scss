@@ -288,6 +288,9 @@
             color: #54575e;
             width: 30%;
             text-align: end;
+            .indicator {
+                display: none;
+            }
             .th-child {
                 color: #3cc73c;
             }
@@ -301,7 +304,7 @@
 
 @media screen and (max-width: 768px) {
    .search {
-        width: 99%;
+        width: 100%;
         .right-text {
             width: calc(58.5% - 6px) !important;
             .div-stoke {
@@ -324,8 +327,30 @@
             }
         }
         .left-text {
-    font-size: .6rem !important;
-    width: 41.5% !important;
+            width: 30%;
+            .indicator {
+                display: block;
+                border: 1px solid ;
+                border-radius: 5px;
+                padding: 2px;
+                position: absolute;
+                left: 31%;
+                top: 7px;
+                font-size: .65rem !important;
+                font-family: tahoma;
+                color: #333;
+            }
+            .text {
+                display: none;
+                &.active {
+                    display: block;
+                    position: absolute;
+                    background: #fff;
+                    border: 1px solid #9197a8;
+                }
+            }
+            // font-size: .6rem !important;
+            // width: 41.5% !important;
         }
 
     }

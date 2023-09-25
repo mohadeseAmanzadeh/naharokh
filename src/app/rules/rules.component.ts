@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./rules.component.scss']
 })
 export class RulesComponent {
+  public activeVertical : boolean = false
   public activeBody: number = 3;
   public iconList = [
     {id:1,
@@ -29,10 +30,9 @@ export class RulesComponent {
       img:"https://icongr.am/octicons/verified.svg?color=7d7d7d",
      },
   ]
-
- 
- 
-
-
+  public activeVerticalPanel() {
+    const verticalElement = document.querySelector('.vertical');
+    verticalElement?.classList.add('active');
+  }
 
 }
