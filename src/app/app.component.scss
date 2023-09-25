@@ -22,8 +22,6 @@
     
 }
 .main {
-   
-   
     height: calc(100vh - 94px);
     width: 77%;
     position: absolute;
@@ -46,8 +44,15 @@
 }
 @media screen and (max-width: 768px) {
     .vertical {
+        left: 5px !important;
         display: none;
         width: 50% !important;
+        transition: all .5s ease ;
+        &.active {
+            display: block;
+            z-index: 999;
+            background: #fff;
+        }
     }
     .search {
         width: 100%;
@@ -63,7 +68,7 @@
         margin: 0;
         padding: 0;
         
-        img {
+        .drop{
             margin: 0;
             padding: 0;
             color: #9197a8;
