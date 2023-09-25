@@ -47,20 +47,34 @@
 @media screen and (max-width: 768px) {
     .vertical {
         display: none;
+        width: 50% !important;
     }
     .search {
         width: 100%;
     }
     .button {
-        width: 3px;
-        height: 100vh;
-        background: red;
-        // display: none;
+        display: block;
+        width: 2px;
+        background: #9197a8;
+        position: absolute;
+        left: 4px;
+        top: 55px;
+        height: calc(100vh - 55px);
+        margin: 0;
+        padding: 0;
+        
+        img {
+            margin: 0;
+            padding: 0;
+            color: #9197a8;
+            width: 17px;
+            position: absolute;
+            top: 50%;
+            right: -11px;
+        }
     }
     .main {
         width: 99%;
-        // margin-right: 30px !important;
-        // width: calc(100% - 4px);
         height: calc(100vh - 94px);
         .section-one {
             height: calc(60vh - 94px);

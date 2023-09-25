@@ -127,7 +127,13 @@
 }
 @media screen and (max-width: 768px) {
     .pane-container {
-        display: none
+        background: #fff;
+        
+        // display: none;
+        // &.active{
+        //     display: block;
+        //     z-index: 999;
+        // }
     }
 }
 
