@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-rules',
@@ -6,21 +6,27 @@ import { Component } from '@angular/core';
   styleUrls: ['./rules.component.scss']
 })
 export class RulesComponent {
+  
+  @Output() toggleModal: EventEmitter<any> = new EventEmitter<any>(); 
+  
   public activeVertical : boolean = false
   public activeBody: number = 1;
   public iconList = [
-    {id:1,
-     title:'سفارش خرید وفروش', 
-     img:"https://icongr.am/entypo/swap.svg?color=7d7d7d",
+    {
+      id:1,
+      title:'سفارش خرید وفروش', 
+      img:"https://icongr.am/entypo/swap.svg?color=7d7d7d",
     },
-    {id:2,
+    {
+      id:2,
       title:'وضیعت مالی', 
       img:"/assets/images/icons8-coin-64.png",
-     },
-     {id:3,
+    },
+    {
+      id:3,
       title:'پیام های ناظر بازار', 
       img:"https://icongr.am/entypo/mail.svg?color=7d7d7d",
-     },
+    },
      {id:4,
       title:'تحلیل ها', 
       img:"https://icongr.am/feather/trending-up.svg?color=7d7d7d",
@@ -30,9 +36,11 @@ export class RulesComponent {
       img:"https://icongr.am/octicons/verified.svg?color=7d7d7d",
      },
   ]
+
   public activeVerticalPanel() {
-    const verticalElement = document.querySelector('.vertical');
-    verticalElement?.classList.add('active');
+    // const verticalElement = document.querySelector('.vertical');
+    // verticalElement?.classList.add('active');
+    this.toggleModal.emit();
   }
 
 }

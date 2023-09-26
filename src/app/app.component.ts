@@ -6,6 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'project1';
-  public ActiveVertical : boolean = false;
+  
+  public activeVertical : boolean = false;
+
+  public toggleModal(event: any) {
+    const verticalElement: HTMLDivElement|null = document.querySelector('.vertical');
+    verticalElement && verticalElement.classList.toggle('active');    
+  };
 }

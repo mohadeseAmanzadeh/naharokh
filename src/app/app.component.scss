@@ -43,28 +43,30 @@
         border: none;
         width: 6px;
         overflow: hidden;
+        transition: all .9s ease;
+        background: #fff; 
+        z-index: 99;
         &.active {
             width: 50%;
-            transition: all .5s ease ;
             border: 1px solid #9197a8;
-            z-index: 99;
-            background: #fff;
         }
     }
     .search {
         width: 100%;
-    }
-    .main {
-        width: 100%;
-        height: calc(100vh - 94px);
-        .section-one {
-            height: calc(60vh - 94px);
         }
-        .section-two {
-            height: calc(40vh - 4px);
+        .main {
+            width: 99.2%;
+            height: calc(100vh - 94px);
+            .section-one {
+                height: calc(60vh - 94px);
+            }
+            .section-two {
+                height: calc(40vh - 4px);
+            }
         }
     }
-}
+    
+
 
 
 
