@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class RulesComponent {
   public activeVertical : boolean = false
-  public activeBody: number = 3;
+  public activeBody: number = 1;
   public iconList = [
     {id:1,
      title:'سفارش خرید وفروش', 

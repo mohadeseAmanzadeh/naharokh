@@ -11,7 +11,7 @@ interface ListItems {
   styleUrls: ['./search-nav.component.scss']
 })
 export class SearchNavComponent {
-
+  public activeText: boolean = false;
   public activeDropdownSearch: boolean = false;
   public activeMenuSub: boolean = false;
 

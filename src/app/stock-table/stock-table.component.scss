@@ -1,166 +1,3 @@
-// table {
-//     width: 100%;
-//     border-collapse: separate;
-//     // border-spacing: 2px;
-//     thead {
-//         height: 20px;
-//         // border-radius: 3px;
-//         background: none;
-//             th {
-//                 background: #ddd url(	https://www.nahayatnegar.com/images/sort.png) 98% center no-repeat;
-//                 text-align: center;
-//                 font-size: .7rem;
-//                 font-family: tahoma;
-//                 font-weight: 400;
-//                 padding: 0 5x 2px;
-//                 border-left: 1px solid #fff;
-//                 line-height: 16px;
-           
-//             } 
-//     }
-//     tbody {
-//         font-family: tahoma;
-//         font-size: .8rem;
-//         td {
-//             border-left: 1px solid #efefef;
-//             height: 27px;
-//             cursor: pointer;
-//             padding: 1px 4px;
-//             font-family: tahoma;
-//             white-space: nowrap;
-//                 .right {
-//                     float: right;
-//                     color: #000;
-//                     .left {
-//                         writing-mode: vertical-rl;
-//                         font-size: .70em;
-//                         transform: rotate(-180deg);
-//                     }  
-//                 }
-//                 .left {
-//                     float: left;
-//                     .left {
-//                         writing-mode: vertical-rl;
-//                         font-size: .70em;
-//                         transform: rotate(-180deg);
-//                     }
-//                 }
-//         }
-//         .six {
-//             border-left-width: 5px;
-//             padding-top: 0;
-//             padding-bottom: 0;
-//             flex: 1 0 14.5%;
-
-//             }
-//         //    &:hover .td-six:last-child{
-//         //     display: block;
-//         //     border: 1px solid #da7068;
-//         //    }
-//         //     .td-six {
-//         //         display: flex;
-//         //         height: 27px;
-//         //         background: #ffb4ae; 
-//         //         margin: 0;
-//         //         // div {
-//         //         //     background: #ffb4ae; 
-//         //         //     margin: 0;
-//         //         // }
-//         //         .sale {
-//         //             writing-mode: vertical-rl;
-//         //             width: 15px;
-//         //             height: 27px;
-//         //             color: #fff;
-//         //             font-size: .70em;
-//         //             border-left: none;
-//         //             border-right: none;
-//         //             transform: rotate(-180deg);
-//         //             background: #da7068;
-//         //             display: none;
-//         //             span {
-//         //                 position: absolute;
-//         //                 top: 2px;
-//         //                 left: 2px;
-//         //             }
-//         //         }
-//         //         .left {
-//         //             width: calc(43% - 2px);
-//         //             // border-left: 2px solid #fff;
-//         //             padding: 3px 3px 0 0; 
-                    
-//         //         }
-//         //         .right {
-//         //             width: calc(57% - 17px);
-//         //             padding: 3px 3px 0 0; 
-//         //             border-right: 1px solid #fff;
-//         //         }
-//         //        }
-//         // }
-//         td:not(td-one) {
-//             direction: ltr;
-//         }
-//         .td-one {
-//             color: #635f5f;
-//             text-align: right;
-//         }
-//         .panel {
-//             background: #baf5da;
-//             color: #000;  
-//         }
-//         .four-td {
-//             .left {
-//                 color: #3da777;
-//             }
-//         }
-       
-//         .zero {
-//             text-align: right;
-//         }
-//     }
-//     tbody td:nth-child(2) {
-//         text-align: right;
-//         font-weight: 600;
-//     }
-//     // tbody td:nth-child(5) {
-//     //     &:hover {
-//     //         border: 1px solid #3da777;
-//     //     }
-//     //     // border: 1px solid #fff;
-//     //        .td-five {
-//     //         display: flex;
-//     //         height: 27px;
-            
-//     //         div {
-//     //             background: #baf5da;
-//     //             border: 1px solid #fff;
-//     //             border-top: none;
-//     //             display: inline-block;
-//     //             padding: 3px 3px 0 0; 
-//     //         }
-//     //         .left {
-//     //             width: calc(57% - 2px);
-//     //         }
-//     //         .right {
-//     //            width: 43%;
-//     //         }
-//     //         .buy {
-//     //             writing-mode: vertical-rl;
-//     //             font-size: .70em;
-//     //             width: 15px;
-//     //             height: 27px;
-//     //             color: #fff;
-//     //             border-left: none;
-//     //             border-right: none;
-//     //             background: #6ecaa1;
-//     //             // display: none;
-//     //          }
-//     //        }
-//     // }
-    
-//     tbody tr:nth-child(even) {
-//         background: #f1f1f1;
-//     }
-// }
 
 .watchlist {
     height: 100%;
@@ -278,8 +115,6 @@
                     width: calc(57% - 1px);
                     height: 25px;
                     background: #b4e5cf;
-                    // margin-top: 1px;
-                    // font-size: .9em;
                     display: inline-block;
                     .right {
                         padding-right: 3px;
@@ -296,13 +131,10 @@
                     }
                 }
                 .best-buy-right {
-                    // position: relative;
-                    // top: -7px;
                     border-left: 2px solid #fff;
                     width: 43%;
                     display: inline-block;
                     background: #b4e5cf;
-                    // font-size: .9em;
                     margin-top: 1px;
                     height: 25px;
                     text-align: right !important;
@@ -312,7 +144,6 @@
                         vertical-align: -1px;
                         display: inline-block;
                     }
-                    // margin-left: -2px;
                 }
                 .title-buy {
                     display: none;
@@ -327,7 +158,6 @@
                 .best-sell-left {
                     width: 43%;
                     background: #f6c2c4;
-                    // margin-right: -2px;
                     display: inline-block;
                     height: 25px;
                     span {
@@ -349,7 +179,6 @@
                         font-size: 0.56rem;
                         text-align: center;
                         line-height: 11px;
-
                     }
                     .right-text {
                         padding-right: 3px;

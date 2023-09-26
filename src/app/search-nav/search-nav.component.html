@@ -63,17 +63,19 @@
                 <option value="">نمادهای بسته</option>
             </select>
         </div>
-    </div>
+    </div>  
     <div class="left-text">
-        <div class="indicator">نمایش شاخص</div>
-        <div class="text">
-            <span>شاخص کل:</span>
-            <span>1,993,085.36 &nbsp;</span>
-            <span class="th-child">46,492.43</span>
-            <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-            <span>شاخص فرابورس:</span>
-            <span>26,535.13 &nbsp;</span>
-            <span class="last-ch">(5.7) &nbsp;</span>
+        <div class="indicator" (click)="activeText = !activeText">نمایش شاخص</div>
+        <div class="text" [ngClass]="{'active' : activeText}">
+            <div class="text-container">
+                <span class="right">شاخص کل:</span>
+                <span class="left">1,993,085.36 &nbsp;</span>
+                <span class="th-child">46,492.43</span>
+                <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                <span class="right">شاخص فرابورس:</span>
+                <span class="left">26,535.13 &nbsp;</span>
+                <span class="last-ch">(5.7) &nbsp;</span>
+                </div>
         </div>
     </div>
 </div>

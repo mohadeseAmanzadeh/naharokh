@@ -330,27 +330,50 @@
             width: 30%;
             .indicator {
                 display: block;
-                border: 1px solid ;
-                border-radius: 5px;
-                padding: 2px;
+                border: 1px solid #9197a8;
+                border-radius: 3px;
+                padding: 0px 2px 3px;
                 position: absolute;
-                left: 31%;
+                left: 34%;
                 top: 7px;
                 font-size: .65rem !important;
                 font-family: tahoma;
-                color: #333;
+                color: #70737a;
+                cursor: pointer;
+                &:hover {
+                    color: #fff;
+                    background: #9197a8;
+                }
             }
             .text {
                 display: none;
                 &.active {
+                    width: 441px;
+                    font-size: 0.75rem;
+                    text-align: center;
+                    height: 100px;
                     display: block;
                     position: absolute;
+                    top: 28vh;
+                    right: 22%;
                     background: #fff;
                     border: 1px solid #9197a8;
+                    box-shadow: 2px 2px 8px 1px;
+                    .text-container {
+                        position: absolute;
+                        top: 41%;
+                        right: 2rem;
+
+                        // span {
+                        //     // display: block;
+                        //     &:nth-child(4) {
+                        //         display: none;
+                        //     }
+                        // }
+                    }
+                    
                 }
             }
-            // font-size: .6rem !important;
-            // width: 41.5% !important;
         }
 
     }
