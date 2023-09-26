@@ -358,18 +358,19 @@
                     right: 22%;
                     background: #fff;
                     border: 1px solid #9197a8;
+                    border-radius: 5px;
                     box-shadow: 2px 2px 8px 1px;
                     .text-container {
                         position: absolute;
                         top: 41%;
                         right: 2rem;
 
-                        // span {
-                        //     // display: block;
-                        //     &:nth-child(4) {
-                        //         display: none;
-                        //     }
-                        // }
+                        span {
+                            // display: block;
+                            &:nth-child(4) {
+                                display: none;
+                            }
+                        }
                     }
                     
                 }
