@@ -1,5 +1,5 @@
 <div class="pane-handler" 
-[ngClass]="{'active' : activeVertical}">
+    [ngClass]="{'active' : activeVertical}">
     <img
         *ngIf="!activeVertical"
         (click)="activeVerticalPanel()"
@@ -7,7 +7,7 @@
     <img class="chevron-left"
         *ngIf="activeVertical"
         (click)="activeVerticalPanel()"
-        src="https://icongr.am/material/chevron-left.svg?size=18&color=6b6b6b">
+        src="https://icongr.am/material/chevron-left.svg?size=22&color=6b6b6b">
 </div>
 <div class="pane-container">
     <div class="columns">
