@@ -9,7 +9,7 @@ export class RulesComponent {
   
   @Output() toggleModal: EventEmitter<any> = new EventEmitter<any>(); 
   
-  public activeVertical : boolean = false
+  public activeVertical : boolean = false;
   public activeBody: number = 1;
   public iconList = [
     {
@@ -27,13 +27,15 @@ export class RulesComponent {
       title:'پیام های ناظر بازار', 
       img:"https://icongr.am/entypo/mail.svg?color=7d7d7d",
     },
-     {id:4,
-      title:'تحلیل ها', 
-      img:"https://icongr.am/feather/trending-up.svg?color=7d7d7d",
+     {
+        id:4,
+        title:'تحلیل ها', 
+        img:"https://icongr.am/feather/trending-up.svg?color=7d7d7d",
      },
-     {id:5,
-      title:'سرمایه گذاری حرفه ای', 
-      img:"https://icongr.am/octicons/verified.svg?color=7d7d7d",
+     {  
+        id:5,
+        title:'سرمایه گذاری حرفه ای', 
+        img:"https://icongr.am/octicons/verified.svg?color=7d7d7d",
      },
   ]
 
@@ -41,6 +43,6 @@ export class RulesComponent {
     // const verticalElement = document.querySelector('.vertical');
     // verticalElement?.classList.add('active');
     this.toggleModal.emit();
+    this.activeVertical = !this.activeVertical
   }
-
 }

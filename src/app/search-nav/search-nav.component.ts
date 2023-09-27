@@ -54,7 +54,7 @@ export class SearchNavComponent {
     },
     {
       id:4,
-      title:'تت نظر3'
+      title:'تحت نظر3'
     },
     {
       id:4,

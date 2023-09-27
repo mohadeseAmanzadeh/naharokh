@@ -1,73 +1,4 @@
 
-<!-- <div class="header">
-    <div class="header-color-top"></div>
-    <div class="row header-top">
-        <div class="el-right user left">
-           <div class="col">
-               <div>
-                   <a href="" target="_blank">
-                    <img src="https://icongr.am/simple/bandcamp.svg?" alt="">
-                       <img src="/assets/images/horse.png" alt="">
-                       "شبکه اجتماعی"
-                   </a>
-               </div>
-               <div class="user-details">
-                   <div class="name" title="سیدمجیدابراهیم پور">سیدمجید ابراهیم پور</div>
-                   <hr class="nahabarg-hr">
-                   <div class="nahabarg">
-                       <a href="">
-                           "نهابرگ:"
-                           <span id="nahabarg-gty"> 22473 </span>
-                       </a>
-                   </div>
-               </div>
-               <div class="el-left">
-                   <a href="" id="logoutModel">
-                      <img src="https://icongr.am/clarity/power.svg?size=128&color=fafafa" alt="">
-                       <style>
-                           .logout::after {
-                               content: 'خروج';
-                           }
-                       </style>
-                   </a>
-               </div>
-               <div class="homepage">
-                   <a href="">
-                       <img src="https://icongr.am/clarity/home.svg?size=21&color=" alt="">
-                   </a>
-               </div>
-               <div></div>
-           </div>
-           <div></div>
-        </div>
-        <div class="right">
-            <div class="menu">
-                <ul>
-                    <li>تالار معاملات</li>
-                    <li>مدیریت پورتفو</li>
-                    <li>گزارش ها</li>
-                    <li>مالی</li>
-                    <li>کارگزار ناظر</li>
-                    <li>دستورها</li>
-                    <li>راهنما</li>
-                </ul>
-            </div>
-            <div class="logo-holder">
-                <div class="message">
-                    <img src="https://icongr.am/material/comment-text-outline.svg?size=25&color=#fff" alt="">
-                </div>
-                <div class="logo">
-                    <img src="/assets/images/logo.png" alt="">
-                </div>
-            </div>
-          
-        </div>
-   </div>
-   
-
-   
- </div> -->
-
  <div class="header">
     <div class="header-color-top"></div>
     <div class="el-left">
@@ -108,7 +39,7 @@
     </div>
 
     <div class="el-right">
-        <div class="menu-hum" (click)="ActiveMenu = !ActiveMenu">
+        <div class="menu-burger" (click)="ActiveMenu = !ActiveMenu">
             <img src="https://icongr.am/entypo/menu.svg?color=ffffff&size=27" alt="">
         </div>
         <div class="logo-img">
@@ -123,7 +54,7 @@
         [ngClass]="{'active' : ActiveMenu}">
             <ul class="title-menu">
                 <li class="i-title-menu" *ngFor="let item of MenuHeader">
-                    <a class="title-menuheader" href="">{{item.title}}</a>
+                    <span class="title-menuheader" href="">{{item.title}}</span>
                     <ul class="sub-menu">
                         <li class="item-sub-menu" *ngFor="let subMenuItem of item.subMenu">
                             <a class="title-sub-menu">{{subMenuItem.title}}</a>
