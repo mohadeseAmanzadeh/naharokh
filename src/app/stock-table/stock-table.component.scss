@@ -70,6 +70,16 @@
             overflow-y: hidden;
             display: flex;
             flex-flow: row nowrap;
+            &:hover {
+               .best-buy-td {
+                    border: 1px solid #84d3b0;
+                    // padding: 1px 4px;
+               }
+               .best-sell-td {
+                    border: 1px solid #ffb4ae;
+                    // padding: 1px 4px;
+               }
+            }
             &:nth-child(even) {
                 background: #f1f1f1;
             }
@@ -81,6 +91,7 @@
                 border-left: 1px solid #efefef;
                 direction: ltr;
                 white-space: nowrap;
+               
             }
             .instrument {
                 position: relative;
@@ -111,11 +122,6 @@
             .best-buy-td {
                 flex: 1 0 14.5%;
                 border-right: 5px solid #efefef;
-                &:hover {
-                    border: 1px solid #599178;
-                    padding-top: 0;
-                    margin: 0;
-                }
                 .best-buy-left {
                     width: calc(57% - 1px);
                     height: 25px;
@@ -157,12 +163,6 @@
             .best-sell-td {
                 flex: 1 0 14.5%;
                 border-left-width: 5px;
-                &:hover {
-                    border: 1px solid #ffb4ae;
-                }
-                // &:hover .title-sell{
-                //     display: block;
-                // }
                 .title-sell {
                     // width: 17px;
                     // height: 17px;
@@ -172,8 +172,7 @@
                     span {
                         // height: 100%;
                         // width: 100%;
-                        // font-size: .65rem;
-                        
+                        // font-size: .65rem; 
                     }
                 }
                 .best-sell-left {
