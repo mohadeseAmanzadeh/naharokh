@@ -7,47 +7,22 @@
     width: 100%;
     display: grid;
     grid-template-columns: auto auto;
-    // box-sizing: border-box;
-    // display: block;
-    // width: calc(100% - 2px);
-    // height: 23px;
-    // padding: 1px 0;
-    .table-buy {
+    .table-buy, .table-sell {
         margin-inline: 2px;
-        // margin-top: 3px;
         border-radius: 3px;
-        // display: inline-block;
-        // float: right;
-        // width: calc(50% - 5px);
-        // font-size: 0.75rem;
-        // font-family: tahoma;
-        // color: #333;
-        // height: 100%;
-        // line-height: 1.3rem;
-        background: #baf5da;
-        // text-align: center;
-        // margin-inline-start: 5px;
-        // padding: 0;
-        
         div {
-            margin: 0;
             height: 100%;
             border-left: 1px solid #fff;
             display: inline-block;
         }
-
         .table-cell:first-child {
             border-left: 0;
             width: 15px;
             input {
-                margin: 0;
                 position: relative;
                 top: 2px;
                 left: 2px;
-                right: 0px;
-                
             }
-          
         }
         .symbol {
 
@@ -72,90 +47,30 @@
             width: 12%;
             background: url(	https://www.nahayatnegar.com/images/sort.png) 98% center no-repeat;
         }
-        .supply {
+        .demand, .supply {
             width: 11%;
         }
         .validity {
             width: 10.5%;
         }
         .operation {
-           width: 12.6%;
-           border-left: none;
-        }
-        
-
+            width: 12.6%;
+            border-left: none;
+         }
 
     }
-    .table-sell {
-        margin-inline: 2px;
-        // margin-top: 3px;
-        border-radius: 3px;
-        // display: inline-block;
-        // float: left;
-        // line-height: 1.3rem;
-        // font-size: 0.75rem;
-        // font-family: tahoma;
-        // width: calc(50% - 10px);
-        // margin-inline: 5px;
-        // height: 100%;
-        background: #ffb4ae;
-        // text-align: center;
-        // color: #333;
-       
-            div {
-                height: 100%;
-                border-left: 1px solid #fff;
-                display: inline-block;
+    .table-buy {
+        background: #baf5da;
+        .table-cell:first-child {
+            input {
+                margin: 0;
+                right: 0px;
             }
-            .table-cell:first-child {
-                border-left: 0;
-                width: 15px;
-                input {
-                    // margin: 0;
-                    position: relative;
-                    top: 2px;
-                    left: 2px;
-
-                }
-               
-            }
-            .symbol {
-                // height: 100%;
-                width: 10.5%;
-                background: url(	https://www.nahayatnegar.com/images/sort.png) 99% center no-repeat;
-            }
-            .row {
-                width: 12%;
-                background: url(	https://www.nahayatnegar.com/images/sort.png) 98% center no-repeat;
-            }
-            .volume {
-                border-color: #999;
-                width: calc(20% - 15px);
-                background: url(	https://www.nahayatnegar.com/images/sort.png) 98% center no-repeat;
-            }
-            .table-cell:nth-child(5) {
-                width: 11%;
-                background: url(	https://www.nahayatnegar.com/images/sort.png) 98% center no-repeat
-            }
-            .price {
-                border-color: #999;
-                width: 12%;
-                background: url(	https://www.nahayatnegar.com/images/sort.png) 98% center no-repeat;
-            }
-            .demand {
-                width: 11%;
-            }
-            .validity {
-                width: 10.5%;
-            }
-            .operation {
-               width: 12.6%;
-               border-left: none;
-            }
-       
-    
         }
-  
+    }
+    .table-sell {
+        background: #ffb4ae;
+        }
     }
     @media screen and (max-width: 768px) {
         .current {

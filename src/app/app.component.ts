@@ -11,6 +11,7 @@ export class AppComponent {
 
   public toggleModal(event: any) {
     const verticalElement: HTMLDivElement|null = document.querySelector('.vertical');
-    verticalElement && verticalElement.classList.toggle('active');    
+    verticalElement && verticalElement.classList.toggle('active');
+        
   };
 }

@@ -4,17 +4,12 @@
     width: 100%;
     display: flex;
     flex-flow: column;
-    align-items: stretch;
     box-sizing: border-box;
-    margin: 0;
     text-align: right;
     font-size: 13px;
     font-family: tahoma;
     thead {
-        width: 100%;
         height: 20px;
-        border-radius: 3px;
-        background: none;
         tr {
             display: flex;
             flex-flow: row  nowrap;
@@ -23,8 +18,6 @@
                 background: #ddd url(	https://www.nahayatnegar.com/images/sort.png) 98% center no-repeat;
                 text-align: center;
                 font-size: .7rem;
-                font-family: tahoma;
-                font-weight: 400;
                 padding: 0 5x 2px;
                 border-left: 1px solid #fff;
                 line-height: 16px;      
@@ -66,32 +59,35 @@
        
         tr {
             height: 27px;
-            line-height: 27px;
-            overflow-y: hidden;
+            border-bottom: 1px solid #efefef;
             display: flex;
+            align-items: stretch;
             flex-flow: row nowrap;
-            &:hover {
-               .best-buy-td {
-                    border: 1px solid #84d3b0;
-                    // padding: 1px 4px;
-               }
-               .best-sell-td {
-                    border: 1px solid #ffb4ae;
-                    // padding: 1px 4px;
-               }
-            }
             &:nth-child(even) {
                 background: #f1f1f1;
             }
-            .left {
-                float: left;
+            &:hover {
+                background: #f8f8f8;
+                .best-buy-td {
+                    border: 1px solid #84d3b0;
+                    // padding: 1px 4px;
+                }
+                .best-sell-td {
+                    border: 1px solid #ffb4ae;
+                    // padding: 1px 4px;
+                }
             }
             td {
+                overflow-y: hidden;
+                line-height: 26px;
+                height: 100%;
                 padding: 1px 4px;
                 border-left: 1px solid #efefef;
                 direction: ltr;
                 white-space: nowrap;
-               
+                .left {
+                    float: left;
+                }  
             }
             .instrument {
                 position: relative;
@@ -119,12 +115,31 @@
             .closing-price-change-td {
                 flex: 1 0 12.5%;
             }
+            .best-buy-td, .best-sell-td {
+                flex: 1 0 14%;
+                .title-buy, .title-sell {
+                    width: 43%;
+                    height: 25px;
+                    color: #fff;
+                    font-size: .5rem;
+                    background: #3c966d;
+                    display: none;
+                    span {
+                        line-height: 17px;
+                        writing-mode: vertical-lr;
+                        vertical-align: middle;
+                        text-align: center;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
             .best-buy-td {
-                flex: 1 0 14.5%;
+                padding-top: 0;
+                padding-bottom: 0;
                 border-right: 5px solid #efefef;
                 .best-buy-left {
                     width: calc(57% - 1px);
-                    height: 25px;
                     background: #b4e5cf;
                     display: inline-block;
                     .right {
@@ -147,7 +162,7 @@
                     display: inline-block;
                     background: #b4e5cf;
                     margin-top: 1px;
-                    height: 25px;
+                    // height: 25px;
                     text-align: right !important;
                     span {
                         line-height: 20px;
@@ -157,29 +172,41 @@
                     }
                 }
                 .title-buy {
-                    display: none;
+                    width: 43%;
+                    // width: 15px;
+                    height: 25px;
+                    // margin-right :-2px;
+                    // position: absolute;
+                    // left: 52%;
+                    color: #fff;
+                    font-size: .5rem;
+                    background: #3c966d;
+                    // transform: rotate(-180deg);
+                    // display: none;
+                    span {
+                        line-height: 17px;
+                        writing-mode: vertical-lr;
+                        vertical-align: middle;
+                        text-align: center;
+                        width: 100%;
+                        height: 100%;
+                    }
                 }
             }
             .best-sell-td {
-                flex: 1 0 14.5%;
                 border-left-width: 5px;
                 .title-sell {
-                    // width: 17px;
-                    // height: 17px;
-                    // background: #e65c5eaf;
-                    // transform: rotate(90deg);
-                    display: none;
+                    background: #e65c5eaf;
+                    transform: rotate(180deg);
                     span {
-                        // height: 100%;
-                        // width: 100%;
-                        // font-size: .65rem; 
+                        vertical-align: 2px;
                     }
                 }
                 .best-sell-left {
                     width: 43%;
                     background: #f6c2c4;
                     display: inline-block;
-                    height: 25px;
+                    // height: 25px;
                     span {
                         padding-right: 3px;
                     }
@@ -213,24 +240,20 @@
             }
             .gt-td {
                 flex: 1 0 10.5%;
-            }
+            }  
         }
+        
+       
     }
 }
 @media screen and (max-width: 768px) {
     .watchlist {
         font-size: 10px;
-        .best-buy-left {
+        .best-buy-left, .best-sell-right{
            .left {
             font-size: .5rem !important;
             left: -2px;
            }
         }
-        .best-sell-right {
-            .left {
-                font-size: .5rem !important;
-                left: -2px;
-            }
-           }
     }
 }
