@@ -263,13 +263,38 @@
 }
 @media screen and (max-width: 720px) {
     .watchlist {
+        font-size: .5rem !important;
+        .best-buy-th, .best-buy-td, .best-sell-th, .best-sell-td {
+            display: none;
+        }
+        .instrument {
+            flex: 1 0 14% !important;
+        }
+        .volume-th, .volume-td {
+            flex: 1 0 14% !important;
+        }
+        .price-change, .price-change-td {
+            flex: 1 0 18% !important;
+        }
+        .closing-price-change, .closing-price-change-td {
+            flex: 1 0 17% !important;
+        }
+        .pb {
+            flex: 1 0 10% !important;
+        }
+        .dr-th, .dr-td {
+            flex: 1 0 9% !important;
+        }
+        .gt-th, .gt-td {
+            flex: 1 0 17% !important;
+        }
        thead {
-        tr {
-            width: 99%;
-            th {
-                font-size: .42rem !important;
+        // width: 98% !important;
+            tr {
+                th {
+                    font-size: .4rem !important;
+                }
             }
         }
-       }
     }
 }
