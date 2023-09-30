@@ -29,7 +29,6 @@ div {
         }
     }
     .tabs {
-        // margin-top: 5rem; 
         height: 25px; 
         .col {
             height: 100%;
@@ -54,5 +53,8 @@ div {
     img {
         top: 0;
     } 
+    
+}
+@media screen and (max-width: 720px) {
     
 }

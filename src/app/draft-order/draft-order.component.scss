@@ -69,3 +69,13 @@
         }
       }
     }
+    @media screen and (max-width: 720px) {
+        .draft-order {
+            font-size: .55rem !important;
+            input {
+                width: 12px !important;
+                top: 3px !important;
+                left: 1px !important;
+            }
+        }
+    }

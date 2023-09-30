@@ -78,4 +78,20 @@
             grid-row-gap: 4px;
         }
     }
+    @media screen and (max-width: 720px) {
+        .current {
+            font-size: .55rem !important;
+            .table-sell {
+                .table-cell {
+                    margin-top: -3px;
+                }
+            }
+            input {
+                top: 3px !important;
+                left: 1px !important;
+                width: 12px !important;
+            }
+            // line-height: 1rem !important;
+        }
+    }
    

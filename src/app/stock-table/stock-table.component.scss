@@ -8,17 +8,23 @@
     text-align: right;
     font-size: 13px;
     font-family: tahoma;
+    thead, tbody {
+        tr {
+            height: 100%;
+            display: flex;
+            flex-flow: row nowrap;
+            width: 100%;
+        }
+    }
     thead {
         height: 20px;
+        color: #444;
         tr {
-            display: flex;
-            flex-flow: row  nowrap;
-            width: 100%;
             th {
                 background: #ddd url(	https://www.nahayatnegar.com/images/sort.png) 98% center no-repeat;
                 text-align: center;
                 font-size: .7rem;
-                padding: 0 5x 2px;
+                padding: 0  2px;
                 border-left: 1px solid #fff;
                 line-height: 16px;      
             }  
@@ -55,14 +61,9 @@
         }  
     } 
     tbody {
-        display: inline-block; 
-       
         tr {
             height: 27px;
             border-bottom: 1px solid #efefef;
-            display: flex;
-            align-items: stretch;
-            flex-flow: row nowrap;
             &:nth-child(even) {
                 background: #f1f1f1;
             }
@@ -116,7 +117,7 @@
                 flex: 1 0 12.5%;
             }
             .best-buy-td, .best-sell-td {
-                flex: 1 0 14%;
+                flex: 1 0 14.5%;
                 .title-buy, .title-sell {
                     width: 43%;
                     height: 25px;
@@ -249,11 +250,26 @@
 @media screen and (max-width: 768px) {
     .watchlist {
         font-size: 10px;
+        th {
+           font-size: .55rem !important;
+        }
         .best-buy-left, .best-sell-right{
            .left {
             font-size: .5rem !important;
-            left: -2px;
+            // left: -2px;
            }
         }
+    }
+}
+@media screen and (max-width: 720px) {
+    .watchlist {
+       thead {
+        tr {
+            width: 99%;
+            th {
+                font-size: .42rem !important;
+            }
+        }
+       }
     }
 }

@@ -1,5 +1,4 @@
 
-
 .search {
     position: relative;
     margin-top: 55px;
@@ -10,29 +9,29 @@
 .button {
     display: none;
 }
+.vertical, .main {
+    height: calc(100vh - 94px);
+    position: absolute;
+}
 .vertical {
     border: 1px solid #9197a8;
     width: calc(23% - 4px);
-    height: calc(100vh - 94px);
-    position: absolute;
     top: 94px;
     left: 0;
 }
 .main {
-    height: calc(100vh - 94px);
     width: 77%;
-    position: absolute;
     top: 94px;
     right: 0px;
     left: 4px;
-    .section-one {
+    .section-one, .section-two {
         border: 1px solid #9197a8;
-        width: 100%;
+        width: 100%; 
+    }
+    .section-one {
         height: calc(60vh - 94px);
     }
     .section-two {
-        border: 1px solid #9197a8;
-        width: 100%;
         height: calc(40vh - 4px);
         position: relative;
         top: 4px;
@@ -64,7 +63,17 @@
                 height: calc(40vh - 4px);
             }
         }
+}
+@media screen and (max-width: 720px) {
+    .vertical{
+        &.active {
+            width: 80%;
+        }
     }
+    .main {
+        width: 98.2% !important;
+    }
+}
     
 
 

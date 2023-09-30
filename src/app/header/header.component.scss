@@ -80,7 +80,7 @@
                 } 
             }
         }
-       .img-pro {
+        .img-pro {
             display: inline-block;
             position: absolute;
             top: 2px;
@@ -242,7 +242,7 @@
             .title-menu {
                 list-style: none;
                 margin: 0;
-                padding: 0; 
+                padding: 0;
                 .i-title-menu {
                     width: 100% !important;
                     .title-menuheader {
@@ -255,8 +255,6 @@
                         width: 150px !important;
                         font-size: .7rem !important;
                     }
-    
-    
                 }
             }
         }
@@ -296,4 +294,24 @@
             }
         }
    } 
+}
+@media screen and (max-width: 720px) {
+    .advertising  {
+        display: none !important;
+    }
+    .menu-header {
+        right:-2rem !important;
+    }
+    .user-details {
+        display: none;
+    }
+    .img-pro {
+        left: 3px;
+    }
+    .logo-out {
+        left: 2.2rem !important;
+        span {
+            display: none;
+        }
+    }
 }

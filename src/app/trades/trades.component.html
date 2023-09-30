@@ -5,8 +5,6 @@
     <div class="row-right">
         <ul>
             <li [ngClass]="{'active': activeOrder == title.id}" (click)="activeOrder = title.id" *ngFor="let title of titleList" class="li">{{title.title}}</li>
-            <!-- <li class="li">سفارش های درجریان</li>
-            <li class="li">معاملات امروز</li> -->
         </ul>
     </div>
     <div class="filter">فیلتر نماد :</div>

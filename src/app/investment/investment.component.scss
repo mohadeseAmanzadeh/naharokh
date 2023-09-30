@@ -13,7 +13,6 @@
             width: 3px;
             display: block;
             position: absolute;
-
         }
         img {
             width: 17px;
@@ -62,11 +61,7 @@
         &:nth-child(even) {
             background: #f7f8fa;
         }
-        .right {
-            display: inline-block;
-            width: 50%;
-        }
-        .left {
+        .right, .left {
             display: inline-block;
             width: 50%;
         }
@@ -79,7 +74,7 @@
             width: 80%;
         }
     }
-    .button {
+    .btn-record {
         cursor: pointer;
         text-decoration: none;
         display: block;
@@ -92,5 +87,13 @@
             background: #1c9ad5;
             color: #fff;
         }
+    }
+}
+@media screen and (max-width: 720px) {
+    .investment {
+       font-size: .8em;
+       .btn-record {
+        font-size: .8em;
+       }
     }
 }
