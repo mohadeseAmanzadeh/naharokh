@@ -184,8 +184,10 @@
                         .item-sub-menu {
                             height: 40px;
                             border-bottom: 1px solid #eaeaea;
+                            transition: all .3s ease
+                            ;
                             &:hover {
-                                background: #474747;
+                                background: #575656;
                                 color: #fff;
                             }  
                             .title-sub-menu {
@@ -261,13 +263,13 @@
         }
         .el-left {
             .user-details{
-                width: 35% !important;
+                width: 35%;
                 .user {
-                    font-size: .7rem !important;
+                    font-size: .7rem ;
                 }
                 .nahabarg {
                     a {
-                        font-size: .7rem !important;
+                        font-size: .7rem ;
                     }
                 }   
             }
@@ -287,7 +289,7 @@
             }
             .home-logo {
                 top: 15px !important;
-                left: 3.8rem !important;
+                left: 3.8rem;
                 img {
                 width: 17px !important;
                 }
@@ -296,22 +298,32 @@
    } 
 }
 @media screen and (max-width: 720px) {
-    .advertising  {
-        display: none !important;
-    }
-    .menu-header {
-        right:-2rem !important;
-    }
-    .user-details {
-        display: none;
-    }
-    .img-pro {
-        left: 3px;
-    }
-    .logo-out {
-        left: 2.2rem !important;
-        span {
-            display: none;
+    .el-left {
+        .advertising  {
+            display: none !important;
+        }
+        .menu-header {
+            right:-2rem !important;
+        }
+        .user-details {
+            display: none;  
+        }
+        .img-pro {
+            left: 30%;
+        }
+        .home-logo {
+            left: 1.8rem !important;
+        }
+        .logo-out {
+            span {
+                display: none;
+            }
+        }
+        .message {
+            img {
+                width: 20px !important;
+                height: 20px !important;
+            }
         }
     }
 }

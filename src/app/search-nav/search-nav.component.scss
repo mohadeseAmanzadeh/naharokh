@@ -43,7 +43,7 @@
                             width: 100%;
                         }
                         .row-one {
-                            height: 50px;
+                            height: 14%;
                             line-height: 32px;
                             span {
                                 width: 50%;
@@ -62,7 +62,7 @@
                         .row-two {
                             padding-inline-start: 0px;
                             margin-top: -15px;
-                            height: calc(100% - 30px);
+                            height: calc(100% - 36px);
                             &::before {
                                 content: "";
                                 width: 0;
@@ -99,7 +99,7 @@
                                     input {
                                         display: inline-block;
                                         padding: 0;
-                                        width: 200px;
+                                        width: 85%;
                                         height: 23px;
                                         float: right;
                                         box-sizing: border-box;
@@ -115,9 +115,10 @@
                                 }
                             }
                             .list-items {
-                                height: calc(100% - 37px);
+                                height: calc(100% - 30px);
                                 padding-right: 6px;
                                 overflow-y: scroll;
+                                font-size: .84rem;
                                 .item {
                                     height: 30px;
                                     line-height: 28px;
@@ -206,14 +207,19 @@
                     height: 40px;
                     margin: 0;
                     .image-search {
+                        float: right;
                         margin-top: 3px;
                         width: 32px;
                         height: 32px;
                     }
+                    label, small {
+                        display: block;
+                        float: left;
+                        width: calc(100% - 35px);
+                    }
                     label {
                         color: #333;
-                        font-size: .8rem;
-                        width: 100%;
+                        font-size: .77rem;
                         margin-bottom: 0;
                     }
                     small {
@@ -343,7 +349,10 @@
                         width: 100%;
                         height: 100%;
                         .total {
-                           padding-top: 20px;
+                            padding-top: 20px;
+                        }
+                        .total, .otc {
+                        //    padding-top: 20px;
                            .right {
                             font-size: .76rem;
                            }
@@ -351,36 +360,54 @@
                         .space {
                             display: none;
                         }
-                        .otc {
-                            .right {
-                                font-size: .75rem;
-                            }
-                        }
                     }
-                    
                 }
             }
         }
-
-    }
+    }    
 }
 @media screen and (max-width: 720px) {
     .search {
         .right-text {
-            width: 85% !important;
-            .menu-sub {
-                // width: 200px !important;
-                // height: 270px !important;
-            }
+            width: 98% !important;
             .input-list-title {
-                width: 100% !important;
+                width: calc(100% - 45px) !important;
+                .menu-sub {
+                    height: 35vh !important;
+                    width: 50vw !important;
+                    .row-one {
+                        a {
+                            font-size: .7rem !important;
+                        }
+                    }
+                    .row-two {
+                        margin-top: 0px !important;
+                        img {
+                            width: 18px !important;
+                        }
+                    }
+                }
             }
             .list-icon {
+                width: 45px !important;
+              .excel {
                 display: none;
+              }
+              img {
+                width: 15px !important;
+                height: 23px !important;
+              }
+            }
+            .column2 {
+                width: 35% !important;
+                .image-search {
+                    width: 32px !important;
+                }
             }
         }
         .left-text {
             .indicator {
+                display: none !important;
                 left: 2% !important;
                 top: 10px;
                 font-size: .5rem !important;
@@ -388,6 +415,12 @@
                     color: #fff;
                     background: #9197a8;
                 }
+            }
+            .text {
+                font-size: .6rem !important;
+                right: 25% !important;
+                height: 80px !important;
+                width: 180px !important;
             }
         }
     }  
